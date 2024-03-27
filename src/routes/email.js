@@ -1,9 +1,6 @@
 async function EmailRoutes(server){
 
-server.get("/", () => {
-    return "Hello world"
-
-})
+server.get("/")
 }
 
  module.exports = EmailRoutes;
