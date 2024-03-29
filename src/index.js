@@ -25,6 +25,11 @@ const EmailRoutes = require("./routes/email");
 
 server.register(EmailRoutes);
 
+const corsOptions = {
+    credentials: true,
+    origin: /localhost\:5173/,
+}
+
 
 server.listen({
     port: process.env.PORT || 3200
